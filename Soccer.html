@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Soccer</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="soccer.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <video autoplay muted loop id="myVideo">
+          <source src="video\25988963b47176820ae70aa6adf84435.mp4" type="video/mp4">
+        </video>
+
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; position: fixed; width: 100%">
+        <span style="font-size:30px; margin-right: 20px; cursor:pointer" onclick="openNav()">&#9776;</span>
+      <a class="navbar-brand" href="a.html">Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="a.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CV.html">CV</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Hobby.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Interest/Hobby
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Classic.html">Classical Music</a>
+                <a class="dropdown-item" href="Sports.html">Sports</a>
+                <a class="dropdown-item" href="Readings.html">Readings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Travel.html">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Notes.html">Notes</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="About.html">About</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav><br><br><br>
+
+      
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Soccer.html">Soccer</a>
+        <a href="Basketball.html">Basketball</a>
+        <a href="Tennis.html">Tennis</a>
+        <a href="Swimming.html">Swimming</a>
+        <a href="Table-Tennis.html">Table-Tennis</a>
+        <a href="Badminton.html">Badminton</a>
+      </div>
+      <div id="main">
+        <div style="margin:0 200px; color: blue; font-size: x-large;">
+          <p>
+            I've been a soccer fan for a long while, probably since 1999, the time when Manchester United won their superior three championships in one year.
+            I'm also a big fan of Liverpool, Spurs, Chelsea and Byren. I've stop watching games since last few years, because my stars such as David Beckham, Micheal Owen and Zidane all retired.
+          </p>
+          <p>
+            Personally speaking, I'm not a guy infatuated with offensive strategies. I like hard defense and all strong and skillful deffensive players. I think with the progress of soccer and our athletics, today's players can handle more skills than before, so I don't want to talk more about the old period like Pele, Beckenbauer, Maradona and Matthäus. 
+          </p>
+          <p>
+            Like everyone, I have my own all time team. <a href="so-legend.html" target="_blank"> Check the another page to see the legendary in my heart.</a> If you think more of my all time team, you could say I'm a Premier League lover. True, the league has most impressive players and the smartest coaches. As a explorer, Premier League has been a place for several brave mentors to develop new techniques and implement their theories into the games. Soccer's market is quite large, even though there was a contest for teams being commercialized. Consider a senario that Chinese teams spent 100 million dollars to build up the team and buy some top tier players, but they still made profit after a huge fritter.
+          </p>
+          <p>
+            By the way, my favorite soccer player is David Beckham when he was a RM at Manchester United. I learned a lot from emulating his remarkable long pass and position feel. Honestly, when I was in college, I tried to play as a RM, however, my speed was not fast enough to fill this role. I actually was a CMF/DMF, sometimes could be a AMF. Someone called me Scholes, somehow.
+          </p>
+        </div>      
+      </div>
+      
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "100px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+ 

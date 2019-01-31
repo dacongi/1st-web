@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>My Website!</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="a.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; position: fixed; width: 100%">
+      <a class="navbar-brand" href="a.html">Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="a.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CV.html">CV</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Hobby.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Interest/Hobby
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Classic.html">Classical Music</a>
+                <a class="dropdown-item" href="Sports.html">Sports</a>
+                <a class="dropdown-item" href="Readings.html" target="_blank">Readings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Travel.html">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Notes.html">Notes</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="About.html">About</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav><br><br>
+
+    <div>
+      <div style="text-align: center;">
+        <h1>
+          My Gallery
+        </h1>
+        <div style="position: absolute; top: 60px; right: 10px;">
+          <audio controls autoplay>
+            <source src="New Recording 7.ogg" type="audio/ogg">
+            <source src="New Recording 7.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div><br>
+
+        <h3 style="margin: 0px 10px">
+        	Look at Me!
+        </h3>
+      <div class="container">
+      <img src="a\WeChat Image_20190118094459.jpg">
+      <img src="a\WeChat Image_20190118094527.jpg">
+      <img src="a\WeChat Image_20190118094517_meitu_1.jpg">
+      <img id="one" src="a\WeChat Image_20190118094539.jpg">
+      <img id="three" src="a\WeChat Image_20190118094521_meitu_2.jpg">
+      <img id="four" src="a\WeChat Image_20190118094524_meitu_3.jpg">
+      <img id="five" src="a\WeChat Image_20190118094532_meitu_4.jpg">
+      </div><br>
+      <h3 style="margin: 0px 10px">
+      	My Little Havanese!
+      </h3>
+      <!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+		    <div class="numbertext">1 / 5</div>
+		    <img src="a\WeChat Image_20190118121433.jpg" style="width:300px; height: 400px; margin: 0px 150px">
+		    <div class="text">Her pettie teeth!</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">2 / 5</div>
+		    <img src="a\WeChat Image_20190118120907.jpg" style="width:300px; height: 450px; margin: 0px 150px">
+		    <div class="text">Outside Evanston in November</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">3 / 5</div>
+		    <img src="a\WeChat Image_20190118121009.jpg" style="width:300px; height: 400px; margin: 0px 150px">
+		    <div class="text">Her warm and large home</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">4 / 5</div>
+		    <img src="a\WeChat Image_20190118141023.jpg" style="width:450px; height: 300px; margin: 0px 75px">
+		    <div class="text">Summer!</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">5 / 5</div>
+		    <img src="a\WeChat Image_20190118141034.jpg" style="width:450px; height: 300px; margin: 0px 75px">
+		    <div class="text">Great Smoky Mountain</div>
+		  </div>
+
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		</div>
+    </div>
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Tennis</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="Tennis.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Soccer.html">Soccer</a>
+      <a href="Basketball.html">Basketball</a>
+      <a href="Tennis.html">Tennis</a>
+      <a href="Swimming.html">Swimming</a>
+      <a href="Table-Tennis.html">Table-Tennis</a>
+      <a href="Badminton.html">Badminton</a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; position: fixed; width: 100%">
+        <span style="font-size:30px; margin-right: 20px; cursor:pointer" onclick="openNav()">&#9776;</span>
+      <a class="navbar-brand" href="a.html">Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="a.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CV.html">CV</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Hobby.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Interest/Hobby
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Classic.html">Classical Music</a>
+                <a class="dropdown-item" href="Sports.html">Sports</a>
+                <a class="dropdown-item" href="Readings.html">Readings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Travel.html">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Notes.html">Notes</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="About.html">About</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav><br><br><br>
+
+      <div id="main">
+        <h1>Just Check My Favorite Players here!</h1>
+        <p style="margin: 0 120px;">I did not have any regular and standard training for tennis. I started to play with my friends when I was about 10 years old. At that time, I already watched many games from TV shows and saw Sampras & Hingis as my idol. However, the first time I played on the court was in middle school period. After that, I gradually developed some technical skills by practicing. Now I still play with my families. I like Sampras' serve, Rederer's unbeatable, Henin's backhand, and Hingis's skill.</p>
+        <div>
+        <li class="tennis-player">
+          <a href="https://en.wikipedia.org/wiki/Pete_Sampras">Pete Sampras<br> 
+            <img src="tennis\WeChat Image_20190118094459.jpg" >
+            <img src="tennis\a.jpg"></a>
+        </li></div>
+        <li class="tennis-player">
+          <a href="https://www.rogerfederer.com/"> Roger Federer<br>
+          <img src="tennis\894022_v9_bb.jpg"> 
+          <img src="tennis\img_3970.jpg"></a>
+        </li>
+        <li class="tennis-player">
+          <a href="https://en.wikipedia.org/wiki/Justine_Henin" >Justine Henin<br>
+          <img src="tennis\justine-henin-hardenne-returns-a-shot-to-jennifer-capriati-1862581.jpg" style="width: 320px; height: 240px;"> 
+          <img src="tennis\Henin2-752x428.jpg" style="width: 320px; height: 240px"> </a>
+        </li>
+        <li class="tennis-player">
+          <a href="https://en.wikipedia.org/wiki/Martina_Hingis"> Martina Hingis<br>
+          <img src="tennis\0127811384999300_0.jpg" style="width: 320px; height: 240px;"> 
+          <img src="tennis\Marzorati-Martina-Hingis-and-the-Joy-of-Doubles.jpg" style="width: 320px; height: 240px"></a>
+        </li>
+      </div>
+
+          
+      
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "100px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+        var content = document.getElementById("content");
+        var sticky = content.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            content.classList.add("sticky")
+          } else {
+            content.classList.remove("sticky");
+          }
+        }
+      </script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+ 

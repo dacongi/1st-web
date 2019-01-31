@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Concerts</title>
+      <link rel="stylesheet" type="text/css" href="concerts.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+		    <div class="numbertext">1 / 9</div>
+		    <img src="concerts\WeChat Image_20190119091436.jpg" style="width:750px; height: 1000px; margin: 0 125px;">
+		    <div class="text">Bernard Haitink conducts Mahler's 7 at CSO</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">2 / 9</div>
+		    <img src="concerts\WeChat Image_201901190914362.jpg" style="width:750px; height: 1000px; margin: 0 125px;">
+		    <div class="text">Bernard Haitink conducts Mahler's 9 at NYPhil</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">3 / 9</div>
+		    <img src="concerts\WeChat Image_201901190914363.jpg" style="width:1000px; height: 750px; margin: 0px">
+		    <div class="text">PhilOch Opening Night, Fantasitic by Berlioz and Yujia Wang performs Chopin Piano Concerto 2</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">4 / 9</div>
+		    <img src="concerts\WeChat Image_201901190914364.jpg" style="width:1000px; height: 750px; margin: 0px">
+		    <div class="text">Sir Simon Rattle and BPO, Mahler's 7 at SFO</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">5 / 9</div>
+		    <img src="concerts\WeChat Image_201901190914365.jpg" style="width:1000px; height: 750px; margin: 0px">
+		    <div class="text">Franz Welser-Möst conducts VPO, Schubert's 8 and Buchbinder performs Brahms's Piano Concerto 1 at Carnegie</div>
+		  </div>
+		  <div class="mySlides fade">
+		    <div class="numbertext">6 / 9</div>
+		    <img src="concerts\WeChat Image_201901190914366.jpg" style="width:1000px; height: 750px; margin: 0px">
+		    <div class="text">Herbert Blomstedt conducts Bethoveen's 3 at CSO</div>
+		  </div>
+		  <div class="mySlides fade">
+		    <div class="numbertext">7 / 9</div>
+		    <img src="concerts\WeChat Image_201901190914367.jpg" style="width:1000px; height: 750px; margin: 0px">
+		    <div class="text">Franz Welser-Möst conducts Bethoveen's 9 at Cleveland</div>
+		  </div>
+		  <div class="mySlides fade">
+		    <div class="numbertext">8 / 9</div>
+		    <img src="concerts\WeChat Image_201901190914368.jpg" style="width:750px; height: 1000px; margin: 0 125px">
+		    <div class="text">Daniel Barenboim conducts Smatana's Ma Vlast at CSO</div>
+		  </div>
+		  <div class="mySlides fade">
+		    <div class="numbertext">9 / 9</div>
+		    <img src="concerts\WeChat Image_201901190914369.jpg" style="width:1000px; height: 750px; margin: 0px">
+		    <div class="text">Ricardo Muti conducts Verdi Requiem at CSO</div>
+		  </div>
+
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		  <span class="dot" onclick="currentSlide(6)"></span> 
+		  <span class="dot" onclick="currentSlide(7)"></span> 
+		  <span class="dot" onclick="currentSlide(8)"></span> 
+		  <span class="dot" onclick="currentSlide(9)"></span> 
+		</div><br>
+
+		<div style="text-align: center;">
+			I also saw a Pollini's recital at CSO, Nutcracker at SYR Ballet, and Summer's Dream at NYC Ballet. They are all the amazing performances. Before them, I showed up in Marinsky's Shanghai concert and Isreal Phil's Beijing concert, that was the very beginning of my concert journey. 
+		</div><br>
+    </div>
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
